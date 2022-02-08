@@ -4,6 +4,13 @@ body {
 }
 h1  {
     color: rebeccapurple;
+    text-align: center;
+    font-size: 60px;
+}
+h3 {
+    color: rebeccapurple;
+    text-align: left;
+    font-size: 40px;
 }
 .spaced {
     line-height: 2.0em;
@@ -17,4 +24,10 @@ h1  {
 }
 .align {
     align-items: center;
+}
+p {
+    color: black;
+    padding: 10px;
+    margin-inline-end: 30px;
+    text-align: center;
 }
