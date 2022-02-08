@@ -5,3 +5,13 @@ body {
 h1  {
     color: rebeccapurple;
 }
+.spaced {
+    line-height: 1.5em;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.bold {
+    font-weight: 700;
+    font-style: italic;
+}
