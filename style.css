@@ -7,8 +7,13 @@ h1  {
     text-decoration: solid;
     text-decoration: underline;
     text-shadow: 0.2in;
+    text-size-adjust: 300px;
 }
 h2  {
     text-align: left;
     text-decoration: underline;
+    text-size-adjust: 150px;
+}
+p   {
+    text-size-adjust: 100px;
 }
