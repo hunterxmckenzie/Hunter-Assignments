@@ -2,3 +2,13 @@ body {
     background-color: lightgreen;
     font-family: 'Rowdies', cursive;
 }
+h1  {
+    text-align: center;
+    text-decoration: solid;
+    text-decoration: underline;
+    text-shadow: 0.2in;
+}
+h2  {
+    text-align: left;
+    text-decoration: underline;
+}
