@@ -1,5 +1,7 @@
-#container {
+.container {
     background-color: azure;
+    width: 50%;
+    
 }
 body {
     background-color: lightgreen;
@@ -31,6 +33,5 @@ h3 {
 p {
     color: black;
     padding: 10px;
-    margin-inline-end: 30px;
     text-align: center;
 }
