@@ -2,7 +2,6 @@
     display: flex;
     background-color: azure;
     width: 50%;
-    justify-content: center;
     align-items: center;
     flex-direction: row;
 }
@@ -51,4 +50,10 @@ p {
     padding: 1%;
     display: block;
     align-content: left;
+}
+p:hover {
+    font-size: 24pt;
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: transparent 1pt rgb(255, 255, 255);
 }
