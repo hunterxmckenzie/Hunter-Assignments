@@ -49,7 +49,6 @@ p {
     width: 75%;
     margin: 2%;
     padding: 1%;
-    float: left;
-    align-items: center;
-    position: relative;
+    display: block;
+    align-content: left;
 }
