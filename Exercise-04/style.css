@@ -4,21 +4,27 @@
     width: 50%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
+
+
 body {
     background-color: lightgreen;
     font-family: 'Rowdies', cursive;
+    display: block;
+    align-items: center;
 }
 h1  {
     color: rebeccapurple;
     text-align: center;
     font-size: 60px;
+    width: 40%;
 }
 h3 {
     color: rebeccapurple;
     text-align: left;
     font-size: 40px;
+    width: 40%;
 }
 .spaced {
     line-height: 2.0em;
@@ -39,9 +45,11 @@ p {
     text-align: center;
 }
 
-#box1, .box2{
-    width: 40%;
+.box1, .box2 {
+    width: 75%;
     margin: 2%;
     padding: 1%;
-    display: inline-block;
+    float: left;
+    align-items: center;
+    position: relative;
 }
