@@ -5,6 +5,8 @@
 body {
     background-color: lightgreen;
     font-family: 'Rowdies', cursive;
+    margin: 8px;
+    line-height: 1.68;
 }
 h1  {
     color: rebeccapurple;
