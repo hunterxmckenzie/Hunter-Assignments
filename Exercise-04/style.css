@@ -1,9 +1,7 @@
 .container {
     display: flex;
-    background-color: azure;
-    width: 50%;
-    align-items: center;
-    flex-direction: row;
+    margin: 20px;
+    justify-content: flex-start;
 }
 
 
@@ -17,13 +15,11 @@ h1  {
     color: rebeccapurple;
     text-align: center;
     font-size: 60px;
-    width: 50%;
 }
 h3 {
     color: rebeccapurple;
     text-align: center;
     font-size: 40px;
-    width: 50%;
 }
 .spaced {
     line-height: 2.0em;
@@ -44,16 +40,23 @@ p {
     text-align: center;
 }
 
-.box1, .box2 {
-    width: 75%;
-    margin: 2%;
-    padding: 1%;
-    display: block;
-    align-content: left;
+.eng {
+    background-color: whitesmoke;
+    width:800px;
+    padding: 15px;
+    margin: 40px;
+    z-index: 1;
 }
 p:hover {
     font-size: 24pt;
     color:rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.2);
     border: transparent 1pt rgb(255, 255, 255);
+}
+.por {
+    background-color: whitesmoke;
+    width:800px;
+    padding:15px;
+    margin: 40px;
+    z-index:4;
 }
