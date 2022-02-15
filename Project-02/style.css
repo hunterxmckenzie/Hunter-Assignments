@@ -10,21 +10,87 @@ html{
 nav {
   height: 60px;
   justify-content: flex-start;
-  align-items: center;
 }
 
 ul.container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  
-  list-style: none;
-  background: tomato;
-  margin: 0;
-  line-height: 60px;
+  display: block;
+  background-color: tomato;
+  margin: 10px;
+  padding: 5px;
+  text-align:center;
+  width: 600;
+  height: 300;
+  margin: 25%;
+}
+li:hover {
+    top: auto;
+    justify-content: center;
+    left: 0;
+    font-size:10em;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: transparent 1pt rgb(75, 57, 57);
+}
+li {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;    
+}
+body {
+    background-color: rgb(243, 243, 240);
 }
 
 .container a {
-  text-decoration: none;
-  color: #F4F4F4;
+    text-decoration: none;
+    color: #F4F4F4;
+  }
+
+img:hover {
+    font-size: 24pt;
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: transparent 1pt rgb(255, 255, 255);
 }
+.container2 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: fit-content;
+    width: 100%;
+}
+.centre {
+    display: flex;
+    float: inline-start;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+
+  h1 {
+      display: flex;
+      justify-content: center;
+
+  }
+  h1:hover {
+    top: auto;
+    justify-content: center;
+    left: 0;
+    font-size:10em;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: transparent 1pt rgb(255, 255, 255);
+}
+
+.title {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: fit-content;
+    width: 100%;
+    background-color: tomato;
+    margin: 10px;
+    padding: 5px;
+    text-align:center;
+}
+
