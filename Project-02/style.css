@@ -1,3 +1,18 @@
+.container {
+    display:flex;
+    margin: 0;
+    width:100%;
+    height:100vh;
+    text-decoration: none;
+    align-items:stretch;
+    align-items:center;
+    justify-content: space-around;
+}
+p  {
+    color: black;
+    text-align: center;
+
+}
 h2 {
     size-adjust: 600px;
     align-items: center;
@@ -13,23 +28,24 @@ nav {
 }
 
 ul.container {
-  display: block;
   background-color: tomato;
-  margin: 10px;
-  padding: 5px;
-  text-align:center;
-  width: 600;
-  height: 300;
-  margin: 25%;
+  display:inline-block;
+  width: auto;
+  height: auto;
+  padding:50px 0;
+  justify-content: center;
+  vertical-align: middle;
 }
 li:hover {
+    display: block;
     top: auto;
     justify-content: center;
     left: 0;
     font-size:10em;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: transparent 1pt rgb(75, 57, 57);
+    text-align: center;
+    height: fit-content;
+    width:fit-content
 }
 li {
     display: flex;
@@ -64,6 +80,7 @@ img:hover {
     float: inline-start;
     justify-content: center;
     padding: 30px 20px;
+    flex-direction: column;
   }
 
   h1 {
@@ -92,5 +109,49 @@ img:hover {
     margin: 10px;
     padding: 5px;
     text-align:center;
+}
+
+.left {
+    width:15%;
+    margin: 10px;
+    padding: 5px;
+    text-align:center;
+}
+
+.center {
+    background-color: tomato;
+    margin: 10px;
+    padding: 5px;
+    text-align:center;
+}
+
+.right {
+    width: 15%;
+    margin: 10px;
+    padding:5px;
+    right: 5px;
+    text-align:center;
+}
+
+.right:hover {
+    text-size-adjust: 2px;
+}
+
+.left:hover {
+    width:100%;
+}
+
+a.beginning:hover {
+    top: auto;
+    left: 0;
+    font-size:35em;
+    text-decoration: none;
+}
+
+a.end:hover {
+    top:auto;
+    text-align:center;
+    font-size: 35em;
+    width:100%;
 }
 
