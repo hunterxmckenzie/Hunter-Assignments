@@ -30,22 +30,19 @@ nav {
 ul.container {
   background-color: tomato;
   display:inline-block;
-  width: auto;
-  height: auto;
+  width: 300px;
+  height: fit-content;
   padding:50px 0;
   justify-content: center;
   vertical-align: middle;
 }
 li:hover {
     display: block;
-    top: auto;
-    justify-content: center;
-    left: 0;
-    font-size:10em;
-    text-decoration: none;
+    justify-content: space-around;
+    font-size:5em;
     text-align: center;
     height: fit-content;
-    width:fit-content
+    width: auto;
 }
 li {
     display: flex;
