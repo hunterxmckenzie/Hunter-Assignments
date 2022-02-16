@@ -30,9 +30,9 @@ nav {
 ul.container {
   background-color: tomato;
   display:inline-block;
-  width: 300px;
+  width: 300;
   height: fit-content;
-  padding:50px 0;
+  padding:0;
   justify-content: center;
   vertical-align: middle;
 }
@@ -66,7 +66,7 @@ img:hover {
 }
 .container2 {
     display: flex;
-    margin: 20px;
+    margin: 20;
     justify-content: center;
     flex-wrap: nowrap;
     height: fit-content;
@@ -76,7 +76,7 @@ img:hover {
     display: flex;
     float: inline-start;
     justify-content: center;
-    padding: 30px 20px;
+    padding: 30;
     flex-direction: column;
   }
 
@@ -97,41 +97,41 @@ img:hover {
 
 .title {
     display: flex;
-    margin: 20px;
+    margin: 20;
     justify-content: center;
     flex-wrap: nowrap;
     height: fit-content;
     width: 100%;
     background-color: tomato;
-    margin: 10px;
-    padding: 5px;
+    margin: 10;
+    padding: 5;
     text-align:center;
 }
 
 .left {
     width:15%;
-    margin: 10px;
-    padding: 5px;
+    margin: 10;
+    padding: 5;
     text-align:center;
 }
 
 .center {
     background-color: tomato;
-    margin: 10px;
-    padding: 5px;
+    margin: 10;
+    padding: 5;
     text-align:center;
 }
 
 .right {
     width: 15%;
-    margin: 10px;
-    padding:5px;
-    right: 5px;
+    margin: 10;
+    padding:5;
+    right: 5;
     text-align:center;
 }
 
 .right:hover {
-    text-size-adjust: 2px;
+    text-size-adjust: 2;
 }
 
 .left:hover {
@@ -139,7 +139,7 @@ img:hover {
 }
 
 a.beginning:hover {
-    top: 10px;
+    top: 10;
     text-align:left;
     font-size: 10em;
     width:100%;
@@ -148,7 +148,7 @@ a.beginning:hover {
 
 a.end:hover {
     display: flex;
-    top: 10px;
+    top: 10;
     text-align:right;
     font-size: 10em;
     width:100%;
