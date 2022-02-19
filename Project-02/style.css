@@ -8,8 +8,11 @@
     align-items:center;
     justify-content: space-around;
 }
-p  {
+.a {
     color: black;
+}
+p  {
+    color: white;
     text-align: center;
 
 }
@@ -29,6 +32,7 @@ nav {
 
 ul.container {
   background-color: tomato;
+  border: black;
   display:inline-block;
   width: 300;
   height: fit-content;
@@ -39,7 +43,7 @@ ul.container {
 li:hover {
     display: block;
     justify-content: space-around;
-    font-size:5em;
+    font-size:10em;
     text-align: center;
     height: fit-content;
     width: auto;
@@ -78,6 +82,7 @@ img:hover {
     justify-content: center;
     padding: 30;
     flex-direction: column;
+    color: black;
   }
 
   h1 {
@@ -113,6 +118,7 @@ img:hover {
     margin: 10;
     padding: 5;
     text-align:center;
+    color: black;
 }
 
 .center {
@@ -126,15 +132,14 @@ img:hover {
     width: 15%;
     margin: 10;
     padding:5;
-    right: 5;
     text-align:center;
+    color: black;
 }
 
-.right:hover {
-    text-size-adjust: 2;
-}
-
-.left:hover {
+.p:hover {
+    top:auto;
+    text-align:center;
+    font-size: 35em;
     width:100%;
 }
 
