@@ -1,3 +1,14 @@
+.container2 {
+    display:flex;
+    margin: 0;
+    width:100%;
+    height:100vh;
+    text-decoration: none;
+    align-items:stretch;
+    align-items:center;
+    justify-content: space-around;
+}
+
 .container {
     display: flex;
     margin: 20px;
@@ -25,18 +36,23 @@ section{
     width: 60%;
 }
 
-header, footer{
+header{
 background: tomato;
-height: 65px;
+height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
 }
 
+footer{
+       height: 80px;
+       padding: 30px 5%;
+    }
+
 aside{
     width:40%;
-    background: green;
+    align-items: center;
 }
 
 main{
@@ -48,6 +64,7 @@ main{
 
 nav {
     height: 60px;
+    display: flex;
     justify-content: flex-start;
     align-content: center;
     vertical-align: center;
@@ -76,6 +93,7 @@ nav {
 }
 
 .nav-links{
+    display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: center;
@@ -98,4 +116,81 @@ li,a{
 
 p {
     color: black;
+    width: 90%;
+    text-align: left;
+    height: fit-content;
+}
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .grid-item img {
+    width: 90%;
+  }
+
+  .black{
+    margin: 2%;
+    padding: 0;
+    background-color: black;
+    height: 2px;
+    width: 75%;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    float:right;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+button{
+    width: 300px;
+    height:50px;
+    color:#000;
+    font-size: 15px;
+    padding: 12px,0;
+    background: black;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button2 {
+    width: 150px;
+    height:25px;
+    font-size: 15px;
+    padding: 12px,0;
+    background: tomato;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+}
+.centre {
+        margin: 10;
+        padding: 5;
+        text-align:center;
+  }
+  
+  h1 {
+    display: flex;
+    color: black;
+    top: auto;
+  justify-content: center;
+  left: 0;
+  font-size:7.5em;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: transparent 1pt rgb(255, 255, 255);
+
+}
+
+.container3 {
+display: flex;
+justify-content: space-around;
+align-items: center;
 }
