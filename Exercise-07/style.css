@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    
+    html, body {
+        height:100%;
+        width:100%;
+    }
+    
+    body {
+        background-color:pink;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .flex-container {
+        display:flex;
+        flex-direction:column;
+        height:100vh;
+        width: 100%;
+    }
+
+    .poem, footer {
+        padding: 5px;
+    }
+
+    .poem {
+        font-size: 8em;
+        line-height:98%;
+    }
+
+    .navigation {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        height: 60px;
+        position:static;
+    }
+
+    .refresh {
+        width: 30%;
+        text-align:left;
+        line-height:60px;
+        font-size:2em;
+    }
+
+    .home {
+        width: 30%;
+        text-align:right;
+        line-height:60px;
+        font-size:2em;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #444444;
+    }
+    a:visited {
+        color: #444444;
+    }
+
+   
+
+@media (min-width: 1024px) {
+
+    .refresh {
+        font-size:2em;
+    }
+    
+    .home {
+        font-size:2em;
+    }
+}
+
+@media (max-width: 1023px) {
+    .poem {
+        font-size:6em;
+    }
+
+    .refresh {
+        font-size:1em;
+    }
+    
+    .home {
+        font-size:1em;
+    }
+}
+
+@media (max-width: 612px) {
+    .poem {
+        font-size:4em;
+    }
+
+    .refresh {
+        font-size:1em;
+    }
+    
+    .home {
+        font-size:1em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .poem {
+        font-size:3em;
+    }
+
+    .navigation {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .refresh {
+        line-height:30px;
+        font-size:1em;
+        width:100%;
+    }
+    
+    .home {
+        line-height:30px;
+        font-size:1em;
+        width:100%;
+        text-align:left;
+    }
+}
