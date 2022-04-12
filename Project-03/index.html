@@ -12,14 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class= "form">
-        <input type="text">
-    </div>
-
-    rendered the names
-    <div class = "container">
-    <ul></ul>
-    </div>
-    <script src="java.js"></script>
+    <div class="container">
+        <div class="filters">
+          <button class="filter-btn" data-filter="yellow">Yellow</button>
+          <button class="filter-btn" data-filter="red">Red</button>
+          <button class="filter-btn" data-filter="blue">Blue</button>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <div class= "form">
+            <input type="text">
+        </div>
+        Search By Name
+        </div>
+        <div class = "container">
+        <ul></ul>
+        </div>
+        <script src="java.js"></script>
+        <div class="list">
+          <h2>Flowers</h2>
+          <ul></ul>
+        </div>
+      </div>
 </body>
 </html>
