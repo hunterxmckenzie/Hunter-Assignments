@@ -1,27 +1,37 @@
- const Shirts = [
+const Shirts = [
     {
-      name: "2010 'Bon Iver, Bon Iver' Tour",
+      name: "2010 Bon Iver Bon Iver Tour",
       color: "2010's",
+      band: "Bon Iver",
       image:
         "https://www.dropbox.com/s/ogtbea8d9eldyww/2010%20bon%20iver%20bon%20iver.jpg?raw=1"
     },
     {
       name: "2020 'I,i' Tour",
       color: "2010's",
+      band: "Bon Iver",
       image: "https://www.dropbox.com/s/38k0wkonug8b4o0/2020%20I%20Comma%20I.png?raw=1"
     },
     {
       name: "2014 '22, A Million' Tour",
       color: "2010's",
+      band: "Bon Iver",
       image:
         "https://www.dropbox.com/s/di8m9pkw5c4v2ny/2014%2022%20a%20million.jpg?raw=1"
     },
     {
       name: "2007 'For Emma Forever Ago' Tour",
       color: "2000's",
+      band: "Bon Iver",
       image:
         "https://www.dropbox.com/s/aq2ouvzfsbo2fix/2010%20Bon%20Iver.jpg?raw=1"
     },
+    {
+      name: "",
+      color: "",
+      band: "",
+      image: ""
+    }
   ];
   
   const ul = document.querySelector("ul");
@@ -68,7 +78,6 @@
       e.target.classList.add("active");
   
       const filterValue = e.target.getAttribute("data-filter");
-      console.log('clicked', event.target)
   
       for (let i = 0; i < cards.length; i++) {
         if (cards[i].classList.contains(filterValue) || filterValue === "all") {
@@ -83,7 +92,7 @@
   }
   filterBtns.addEventListener("click", filterFn);
   
-  //search engine for name of shirts, currently without images//
+  //search engine for name of shirts//
 
   function searchShirts(event){
     let searchString = event.target.value;
@@ -113,38 +122,3 @@
  }
  
  searchBar.addEventListener('keyup', searchShirts)
-
-
- //From class, ascending and descending//
-
- function sortingFn(event){
-     console.log(event.target);
-     if(event.target.classList.contains("filter-btn")){
-         //do something
-        const filterValue = event.target.getAttribute("data-filter");
-
-        if(filterValue == "ascending"){
-            //write sort logic
-            flowers.sort(function(a, b){
-                if(a.name < b.name){
-                    return -1;
-                }
-                if(a.name > b.name){
-                    return 0;
-                }
-            })
-            console.log('sorted', flowers);
-            ul.innerHTML =""
-            renderShirtsToPage(Shirts)
-
-        } else if (filterValue === "descending") {
-            //write reverse logic
-            Shirts.reverse();
-            console.log('reversed', Shirts)
-            //clear the page of unsorted shirts
-            ul.innerHTML ="";
-            renderShirtsToPage(Shirts)
-
-        }
-     }
- }
