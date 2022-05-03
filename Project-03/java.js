@@ -194,6 +194,125 @@
      "https://www.dropbox.com/s/u1a73btswhusbqn/1998%20OK%20Computer%20tour.jpg?dl=0"
       ,band: "Radiohead"
     },
+    {
+      name: "1993 'Vs.' Tour ",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/0smwx0ubs3mv0m4/1993%20Pearl%20Jam%20Vs.%20Tour.jpg?dl=0"
+      ,band: "Pearl Jam"
+    },
+    {
+      name: "1994 'Alive' Tour ",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/0dbxs2pdif1p47f/1993%20Pearl%20Jam%20Alive%20Shirt.jpg?dl=0"
+      ,band: "Pearl Jam"
+    },
+    {
+      name: "1992 'Don't Give Up' European Tour ",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/343hk4whx797xaw/1992%20Pearl%20Jam%20Dont%20Give%20Up%20Europe%20Tour.jpg?dl=0"
+      ,band: "Pearl Jam"
+    },
+    {
+      name: "1984 'Ride The Lightning' Tour ",
+      color: "1980's",
+      image:
+     "https://www.dropbox.com/s/8ro4k645gbon4fj/Ride%20the%20Lightning%20Tour.jpg?dl=0"
+      ,band: "Metallica"
+    },
+    {
+      name: "1996 'Load' Tour ",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/a4yqfef20m61tdp/1996%20Load%20Album%20Tour.jpg?dl=0"
+      ,band: "Metallica"
+    },
+    {
+      name: "1992 'Wherever I May Roam' Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/aqwvg5zez64jw2y/1992%20Wherever%20I%20May%20Roam.jpg?dl=0"
+      ,band: "Metallica"
+    },
+    {
+      name: "1991 World Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/wy1joq3xc7copn5/1991%20World%20Tour.jpg?dl=0"
+      ,band: "Metallica"
+    },
+    {
+      name: "1989 'Their Money Tips Her Scales Again' Tour ",
+      color: "1980's",
+      image:
+     "https://www.dropbox.com/s/g52mhfrsu5wh93q/1989%20Their%20Money%20Tips%20Her%20Scales%20Again.jpg?dl=0"
+      ,band: "Metallica"
+    },
+    {
+      name: "2000 'The Farewell' Tour",
+      color: "2000's",
+      image:
+     "https://www.dropbox.com/s/q3akq6u8j9v5qk6/2000%20the%20farewell%20tour.jpg?dl=0"
+      ,band: "KISS"
+    },
+    {
+      name: "1996 'Alive Worldwide' Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/jejrayymxzj1jxp/1996%20Alive%20Worldwide.jpg?dl=0"
+      ,band: "KISS"
+    },
+    {
+      name: "1990 'Hot Shade' Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/6ruhosbadg1644n/1990%20Hot%20Shade%20Tour.jpg?dl=0"
+      ,band: "KISS"
+    },
+    {
+      name: "1987 Tour",
+      color: "1980's",
+      image:
+     "https://www.dropbox.com/s/lpjcwky5n71b67d/1987%20Tour.jpg?dl=0"
+      ,band: "KISS"
+    },
+    {
+      name: "1978 Tour",
+      color: "1970's",
+      image:
+     "https://www.dropbox.com/s/mdfrn25j60mr2qx/1978%20Tour.JPG?dl=0"
+      ,band: "KISS"
+    },
+    {
+      name: "1997 Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/94jlpatbml4vm9w/1997%20Tour.jpg?dl=0"
+      ,band: "Green Day"
+    },
+    {
+      name: "1995 'Dookie' Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/nkez2ip8de5w2ae/1995%20Dookie%20Tour%202.jpg?dl=0"
+      ,band: "Green Day"
+    },
+    {
+      name: "1995 'Dookie' Tour Alternate",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/6muydw8ise5lo1r/1995%20Dookie%20Tour%201.png?dl=0"
+      ,band: "Green Day"
+    },
+    {
+      name: "1994 'Self-Titled' Alternate",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/ykxp04t06zcvfdu/1994%20Green%20Day%20Tour.jpg?dl=0",
+      band: "Green Day"
+    },
   ];
   
   const ul = document.querySelector("ul");
@@ -214,15 +333,17 @@
       color.classList.add(Shirts[i].color);
       color.textContent = Shirts[i].color;
       // add band name
-     
-  
       let image = document.createElement("img");
       image.setAttribute("src", Shirts[i].image);
+      // band name
+      let artist = document.createElement("p");
+      artist.textContent = Shirts[i].band;
       // append created elements to page
       ul.appendChild(list_item);
       list_item.appendChild(title);
       list_item.appendChild(color);
       list_item.appendChild(image);
+      list_item.appendChild(artist);
     }
   }
   renderShirtsToPage(Shirts);
@@ -275,29 +396,17 @@
  for(i=0; i <searched.length; i++){
      let list_item = document.createElement('li');
      list_item.textContent = searched[i].name;
+     // add images
  
      ul.appendChild(list_item)
      }
- }
- 
+    }   
+
  function clearList(){
      ul.innerHTML = ""
  }
  
  searchBar.addEventListener('keyup', searchShirts)
-
- function renderSearchShirts(searched){
-   console.log('Shirts'.toLowerCase)
-   clearList();
-   for(i=0; i <searched.length; i++){
-     let list_item = document.createElement('li');
-     list_item.textContent = searched[i].name;
-
-     ul.appendChild(list_item)
-     
-   }
-
-
  //From class, ascending and descending//
 
  function sortingFn(event){
@@ -331,4 +440,3 @@
         }
      }
     }
-  }
