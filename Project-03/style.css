@@ -13,6 +13,8 @@
   }
   
 
+  
+
 header {
     text-align: center;
 }
@@ -95,6 +97,7 @@ header img {
     /*   background-color: #f15b31; */
     padding: 20px;
     /*   display: flex; */
+    position: relative;
     display: flex;
     border: 1px solid #141414;
     width: 100%;
@@ -115,6 +118,11 @@ header img {
     background: #16b5ef;
   }
   
+  .filter-content{
+    margin: 15px auto;
+    width: 90%;
+}
+  
   ul {
     display: flex;
     /*   flex-wrap: wrap; */
@@ -131,6 +139,7 @@ header img {
   
   li:hover {
     background: rgb(100, 226, 220);
+    width: auto
   }
   
   ul .card.hide {
@@ -152,6 +161,7 @@ header img {
   
   img {
     width: 100%;
-    height: 300px;
+    height: 100%;
   }
   
+
