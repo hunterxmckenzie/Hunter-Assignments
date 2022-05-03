@@ -103,6 +103,97 @@
      "https://www.dropbox.com/s/zdv5lvj8hhxowws/2022%20Bootleg.jpg?dl=0"
       ,band: "Rolling Stones"
     },
+    {
+      name: "1997 'Bridges To Babylon' Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/o840x92gylgv9if/1997%20Bridges%20To%20Babylon.jpg?dl=0"
+      ,band: "Rolling Stones"
+    },
+    {
+      name: "1981 USA Tour",
+      color: "1980's",
+      image:
+     "https://www.dropbox.com/s/yw78qul4nczyhp4/1981%20Tour.jpg?dl=0"
+      ,band: "Rolling Stones"
+    },
+    {
+      name: "1981 USA Tour Alternate",
+      color: "1980's",
+      image:
+     "https://www.dropbox.com/s/3y5gre1t0fj5r66/1981%20Tour%202.jpg?dl=0"
+      ,band: "Rolling Stones"
+    },
+    {
+      name: "1978 USA Tour Bootleg",
+      color: "1970's",
+      image:
+     "https://www.dropbox.com/s/2gi3cddndjny55u/1978%20Tour.jpg?dl=0"
+      ,band: "Rolling Stones"
+    },
+    {
+      name: "1975 USA Tour",
+      color: "1970's",
+      image:
+     "https://www.dropbox.com/s/xit2lr5nr9680k4/1975%20Tour.jpg?dl=0"
+      ,band: "Rolling Stones"
+    },
+    {
+      name: "1972 USA Tour",
+      color: "1970's",
+      image:
+     "https://www.dropbox.com/s/g2bgjz0vyv2moxu/1972%20Concert.jpg?dl=0"
+      ,band: "Rolling Stones"
+    },
+    {
+      name: "2006 'Stadium Arcadium' USA Tour",
+      color: "2000's",
+      image:
+     "https://www.dropbox.com/s/5d14z43bzixtea0/s-l300.jpg?dl=0"
+      ,band: "Red Hot Chili Peppers"
+    },
+    {
+      name: "2006 'Stadium Arcadium' USA Tour Alternate",
+      color: "2000's",
+      image:
+     "https://www.dropbox.com/s/nhae0hed34pjw7y/m_5d08058ea2e32e4048488ac2.jpeg?dl=0"
+      ,band: "Red Hot Chili Peppers"
+    },
+    {
+      name: "1996 'Blood, Sugar, Sex, Magik' USA Tour",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/xizvdqe5elbltzc/IMG_6754.jpg?dl=0"
+      ,band: "Red Hot Chili Peppers"
+    },
+    {
+      name: "2016 'A Moon Shaped Pool' World Tour",
+      color: "2010's",
+      image:
+     "https://www.dropbox.com/s/u1xzqhoou6rh5db/2016%20A%20Moon%20Shaped%20Pool.jpg?dl=0"
+      ,band: "Radiohead"
+    },
+    {
+      name: "2016 'A Moon Shaped Pool' World Tour Alternate",
+      color: "2010's",
+      image:
+     "https://www.dropbox.com/s/9wva448hr52c998/2016%20A%20Moon%20Shaped%20Pool%202.jpg?dl=0"
+      ,band: "Radiohead"
+    },
+    {
+      name: "2006 'Hail To The Thief' Tour ",
+      color: "2000's",
+      image:
+     "https://www.dropbox.com/s/wix2y744veuq7xv/2006%20Hail%20To%20The%20Thief.jpg?dl=0"
+      ,band: "Radiohead"
+    },
+    {
+      name: "1998 'OK Computer' Tour ",
+      color: "1990's",
+      image:
+     "https://www.dropbox.com/s/u1a73btswhusbqn/1998%20OK%20Computer%20tour.jpg?dl=0"
+      ,band: "Radiohead"
+    },
   ];
   
   const ul = document.querySelector("ul");
