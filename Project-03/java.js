@@ -429,7 +429,10 @@ filterBtns.addEventListener("click", sortingFn);
      let list_item = document.createElement('li');
      list_item.textContent = searched[i].name;
      // add images
- 
+      let list_item2 = document.createElement('img');
+      list_item2.setAttribute("src", searched[i].image)
+
+
      ul.appendChild(list_item)
      }
     }   
@@ -440,37 +443,7 @@ filterBtns.addEventListener("click", sortingFn);
 
  searchBar.addEventListener('keyup', searchShirts)
  
- //Attempt at adding images to shirts
 
- function searchShirts(event){
-  let searchString = event.target.value;
-   console.log(searchString)
+ //Attempt at adding images to shirts, append to end of list
 
-
-
-   const searchedImage = Shirts.filter(function(Shirts){
-       if(searchString){
-           return Shirts.image.includes(searchString)
-       }
-   })
-   renderSearchedShirts(searchedImage)
-}
-
-
-function renderSearchedShirts(searched){
-console.log('line 64:', searched)
-clearList();
-for(i=0; i <searched.length; i++){
-   let list_item = document.createElement('li');
-   list_item.textContent = searched[i].image;
-   // add images
-
-   ul.appendChild(list_item)
-   }
-  }   
-
-function clearList(){
-   ul.innerHTML = ""
-}
-
-searchBar.addEventListener('keyup', searchShirts)
+ 
