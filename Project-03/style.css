@@ -170,3 +170,17 @@ header img {
   }
   
 
+  @media (min-width: 660px) {
+    .container {
+      background: white;
+      height: 100%;
+    }
+    main {
+      display: flex;
+    }
+    .collection {
+      padding: 1em;
+      line-height: 1.68;
+      flex-basis: 30%;
+    }
+  }
