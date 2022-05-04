@@ -16,9 +16,6 @@
     display: block;
     
   }
-  
-
-  
 
 header {
     text-align: center;
@@ -42,6 +39,7 @@ header {
 
   .upanddown {
       display: flex;
+      align-content: right;
   }
  
   header {
@@ -83,27 +81,7 @@ header img {
     opacity: 1;
 }
 
-.popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 35%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    text-align: center;
-    font-size: 1.68em;
-}
-
-.popup a {
-    font-family: 'Archivo Black', sans-serif;
-}
-
-
-
-
-  .filters, 
-  .list {
+  .filters {
     /*   background-color: #f15b31; */
     padding: 20px;
     /*   display: flex; */
@@ -112,8 +90,27 @@ header img {
     border: 1px solid #141414;
     width: 100%;
   }
+
+  .list {
+    /*   background-color: #f15b31; */
+    padding: 20px;
+    /*   display: flex; */
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
   
   .filter-btn {
+    color: white;
+    background-color: #f15b31;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: none;
+  }
+
+  .filter-btn2 {
     color: white;
     background-color: #f15b31;
     border-radius: 20px;
@@ -127,6 +124,7 @@ header img {
     border-color: #16b5ef;
     background: #16b5ef;
   }
+
   
   .filter-content{
     margin: 15px auto;
@@ -150,15 +148,15 @@ header img {
 }
 
 img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border: 1em #101014;
 }
-
   
   li:hover {
     background: rgb(100, 226, 220);
-    width: auto
+    width: 300px;
+    height: 300px;
   }
   
   ul .card.hide {
