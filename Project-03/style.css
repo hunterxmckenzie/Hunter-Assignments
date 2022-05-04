@@ -21,6 +21,13 @@ header {
     text-align: center;
 }
 
+.other-nav {
+  position: right;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
   form {
     overflow: hidden;
     float: right;
@@ -29,12 +36,6 @@ header {
 
 .container {
     align-content: center;
-}
-
-.collection {
-  display: grid;
-  grid-template-columns: auto;
-    align-items: left;
 }
 
   .upanddown {
@@ -54,15 +55,6 @@ ul .card.show {
     animation: fadeIn 0.5s ease;
 }
 
-
-
-
-header img {
-    display: block;
-    width: 150px;
-    margin-right: auto;
-    margin-left: auto;   
-}
   
   .overlay {
     position: fixed;
@@ -118,6 +110,7 @@ header img {
     height: 30px;
     text-align: center;
     border: none;
+    align-items: right;
   }
   
   .filter-btn.active {
@@ -148,8 +141,8 @@ header img {
 }
 
 img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border: 1em #101014;
 }
   
