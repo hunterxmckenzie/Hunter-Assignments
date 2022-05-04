@@ -27,7 +27,12 @@ header {
 
 .container {
     align-content: center;
-    
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: auto;
+    align-items: left;
 }
 
   .upanddown {

@@ -372,43 +372,37 @@
 // add ascending descending here (sorting function)
 
 function sortingFn(e) {
-  if (e.target.classList.contains("filter-btn")) {
+  if (e.target.classList.contains("filter-btn2")) {
     const filterValue = e.target.getAttribute("data-filter");
- 
- if (filterValue === "ascending") {
-  // [1] sort the object
-  Shirts.sort(function (a, b) {
-    if (a.name < b.name) {
-      return -1;
+
+    if (filterValue === "ascending") {
+      // [1] sort the object
+      Shirts.sort(function (a, b) {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+      console.log(Shirts);
+      ul.innerHTML = "";
+      renderShirtsToPage(Shirts);
+    } else if (filterValue === "descending") {
+      // [2] reverse sort the object
+      Shirts.reverse();
+      console.log(Shirts);
+      ul.innerHTML = "";
+      renderShirtsToPage(Shirts);
     }
-    if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
-  });
-  console.log(Shirts);
-  ul.innerHTML = "";
-  renderShirtsToPage(Shirts);
-} else if (filterValue === "descending") {
-  // [2] reverse sort the object
-  Shirts.reverse();
-  console.log(Shirts);
-  ul.innerHTML = "";
-  renderShirtsToPage(Shirts);
+  }
 }
+
+filterBtns.addEventListener("click", sortingFn);
 
 //attempts
-function sortingFn(selector) {
-  $(selector).find("li").sort(function(a, b) {
-      return(Number(a.innerHTML) - Number(b.innerHTML));
-  }).each(function(index, el) {
-      $(el).parent().append(el);
-  });
-}
 
-
-
-filterBtns.addEventListener("click", sortingFn);}}
 
   //search engine for name of shirts, currently without images//
 
