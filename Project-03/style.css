@@ -141,16 +141,17 @@ ul .card.show {
 }
 
 img{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border: 1em #101014;
+    margin: 20px;
 }
   
-  li:hover {
+  /*li:hover {
     background: rgb(100, 226, 220);
     width: 300px;
     height: 300px;
-  }
+  }*/
   
   ul .card.hide {
     display: none;
