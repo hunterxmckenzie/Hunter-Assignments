@@ -335,8 +335,8 @@
       ul.appendChild(list_item);
       list_item.appendChild(title);
       list_item.appendChild(color);
-      list_item.appendChild(image);
       list_item.appendChild(artist);
+      list_item.appendChild(image);
     }
   }
   renderShirtsToPage(Shirts);
