@@ -402,41 +402,49 @@ function sortingFn(e) {
 filterBtns.addEventListener("click", sortingFn);
 
 // add ascending descending by Year (sorting function)
-//currently shuts down other filters, will need new code
+//currently shuts down other filters except search bar, will need to figure out//
 
 
-  //search engine for name of shirts, currently without images//
+  //search engine for name of shirts//
 
   function searchShirts(event){
-    let searchString = event.target.value;
-     console.log(searchString)
+    let searchString = event.target.value.toLowerCase();
+     console.log('L408: ',searchString)
 
 
  
      const searchedName = Shirts.filter(function(Shirts){
          if(searchString){
-             return Shirts.name.includes(searchString)
+             return Shirts.name.toLowerCase().includes(searchString)
          }
      })
+
+     console.log('L416: ', searchedName)
      renderSearchedShirts(searchedName)
  }
 
+ //attempt at search engine for band name//
+ 
+
+//search engine to pull up images of shirts when searched//
 
  function renderSearchedShirts(searched){
  console.log('line 64:', searched)
  clearList();
+ 
  for(i=0; i <searched.length; i++){
      let list_item = document.createElement('li');
      list_item.textContent = searched[i].name;
      // add images
-      let list_item2 = document.createElement('img');
-      list_item2.setAttribute("src", searched[i].image)
+      let image = document.createElement('img');
+      image.setAttribute("src", searched[i].image)
 
 
      ul.appendChild(list_item)
+     list_item.appendChild(image);
      }
     }   
-
+    
  function clearList(){
      ul.innerHTML = ""
  }
@@ -445,5 +453,7 @@ filterBtns.addEventListener("click", sortingFn);
  
 
  //Attempt at adding images to shirts, append to end of list
+
+ 
 
  

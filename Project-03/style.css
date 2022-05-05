@@ -4,21 +4,58 @@
     /*   padding: 0; */
   }
   
+  #nav-primary {
+    width: 420px;
+    float: left;
+    padding: 10px 0;
+  }
+
   html,
   body {
-    height: 100vh;
-    width: 100%;
+    width: auto;
+    padding: 30px 15px 0 15px;
+    left: 50%;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
+    align-content: center;
   }
 
   main {
     display: block;
-    
+    width: 1230px;
+  padding: 30px 15px 30px 15px;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 0;
+  overflow: auto;
+  min-height: 500px;
+  }
+
+  main #list {
+    position: relative;
+    overflow: hidden;
   }
 
 header {
-    text-align: center;
+  display: block;
+  width: 1230px;
+  padding: 30px 15px 0 15px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -630px;
+  z-index: 5;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #000;
+    border-bottom-width: 100%;
+    overflow: hidden;
+}
+
+header #logo {
+  align-items: center;
+  text-align: center;
+  width: auto;
 }
 
 .other-nav {
@@ -26,6 +63,10 @@ header {
   display: inline-block;
   margin-right: 10px;
   margin-left: auto;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
   form {
@@ -69,8 +110,8 @@ ul .card.show {
 }
 
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
 }
 
   .filters {
@@ -79,7 +120,6 @@ ul .card.show {
     /*   display: flex; */
     position: relative;
     display: flex;
-    border: 1px solid #141414;
     width: 100%;
   }
 
@@ -91,23 +131,35 @@ ul .card.show {
     display: flex;
     width: 100%;
   }
+
+  main #list {
+    /*   background-color: #f15b31; */
+    padding: 20px;
+    /*   display: flex; */
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
   
   .filter-btn {
     color: white;
     background-color: #f15b31;
-    border-radius: 20px;
+    border-radius: 1px;
+    margin: 5px;
+    float: left;
     width: 100px;
     height: 30px;
     text-align: center;
-    border: none;
+    border: black
   }
 
   .filter-btn2 {
     color: white;
     background-color: #f15b31;
-    border-radius: 20px;
+    border-radius: 1px;
     width: 100px;
     height: 30px;
+    margin: 5px;
     text-align: center;
     border: none;
     align-items: right;
