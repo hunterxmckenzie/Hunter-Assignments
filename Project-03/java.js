@@ -3,20 +3,20 @@
       name: "2010 'Bon Iver, Bon Iver' Tour",
       color: "2010's",
       image:
-        "https://www.dropbox.com/s/ogtbea8d9eldyww/2010%20bon%20iver%20bon%20iver.jpg?raw=1"
+        "https://www.dropbox.com/s/x6a8iftf5hf37a5/2010%20Bon%20Iver.jpg?raw=1"
       ,band: "Bon Iver"
       },
     {
       name: "2020 'I,i' Tour",
       color: "2010's",
-      image: "https://www.dropbox.com/s/38k0wkonug8b4o0/2020%20I%20Comma%20I.png?raw=1"
+      image: "https://www.dropbox.com/s/eksmeuxz90yc421/2020%20I%20Comma%20I.png?raw=1"
      , band: "Bon Iver"
     },
     {
       name: "2014 '22, A Million' Tour",
       color: "2010's",
       image:
-        "https://www.dropbox.com/s/di8m9pkw5c4v2ny/2014%2022%20a%20million.jpg?raw=1"
+      "https://www.dropbox.com/s/7sovxg5rkutfj4v/2014%2022%20a%20million.png?raw=1"
       ,band: "Bon Iver"
       },
     {
